@@ -1,6 +1,8 @@
 <template>
   <div>
-    Hello
+    <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
+    <nuxt-link :to="switchLocalePath('fr')">Français</nuxt-link>
+    {{ $t('welcome') }}
   </div>
 </template>
 
