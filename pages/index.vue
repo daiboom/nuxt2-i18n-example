@@ -11,5 +11,12 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'IndexPage',
+  asyncData: ({ app }) => {
+    app.i18n.t('SSR Translation')
+    return {}
+  },
+  data: () => {
+    return {}
+  },
 })
 </script>
